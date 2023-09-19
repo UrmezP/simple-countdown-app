@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+section:nth-child(1) {
+  height: 80dvh;
+  background-image: linear-gradient(#0071fb, 90%, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(2) {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+input {
+  display: block;
+  outline: 0;
+  border: 0;
+  height: 30px;
+  width: 300px;
+  text-align: center;
+  margin-left: 8px;
+}
+#counter {
+  opacity: 0;
+  transition: opacity 600ms;
+  font-size: 180px;
+  letter-spacing: 4px;
+}
+#counter.fadeIn {
+  opacity: 1;
+}
+
+button {
+  border: none;
+  border: 1px solid;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity 800ms;
+}
+button#start:hover {
+  border-color: green;
+}
+button#stop:hover {
+  border-color: red;
+}
+button.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
